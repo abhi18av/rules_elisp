@@ -97,8 +97,8 @@ selects.config_setting_group(
         ":openbsd",
         ":windows_x86_32",
         ":windows_x86_64",
-        ":macos_x86_32",
-        ":macos_x86_64",
+        ":osx_x86_32",
+        ":osx_x86_64",
     ],
 )
 
@@ -142,17 +142,17 @@ config_setting(
 )
 
 config_setting(
-    name = "macos_x86_32",
+    name = "osx_x86_32",
     constraint_values = [
-        "@platforms//os:macos",
+        "@platforms//os:osx",
         "@platforms//cpu:x86_32",
     ],
 )
 
 config_setting(
-    name = "macos_x86_64",
+    name = "osx_x86_64",
     constraint_values = [
-        "@platforms//os:macos",
+        "@platforms//os:osx",
         "@platforms//cpu:x86_64",
     ],
 )
